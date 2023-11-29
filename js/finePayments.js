@@ -88,7 +88,7 @@ function payFine() {
     return item["номер"] === fineNumberData;
   });
 
-  if (findFineIndex > 0) {
+  if (findFineIndex >= 0) {
     if (DB[findFineIndex]["сума"] !== amountData) {
       alert("Сума не співпадає");
       return;
